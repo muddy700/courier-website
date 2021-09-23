@@ -4,6 +4,8 @@ import Banner from '../components/Banner';
 import { Link } from 'react-router-dom';
 import Services from '../components/Services';
 import FeaturedRooms from '../components/FeaturedRooms';
+import Introduction from '../components/Introduction';
+import Footer from '../components/Footer';
 
 function Home() {
   return (
@@ -13,13 +15,14 @@ function Home() {
           title='on-time delivery'
           subtitle='our services starting at $299'
         >
-          <Link to='/rooms' className='btn-primary'>
+          <Link to='/' className='btn-primary'>
             track you package
           </Link>
         </Banner>
       </Hero>
+      <Introduction />
       <Services />
-      <FeaturedRooms />
+      <Footer />
     </React.Fragment>
   );
 }

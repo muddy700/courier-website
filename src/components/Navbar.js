@@ -16,7 +16,6 @@ export class Navbar extends Component {
   render() {
     return (
       <nav className='navbar'>
-        {/* <div style={{ textAlign: 'right', marginRight: '5%', backgroundColor: 'darkblue' }}>info@courier.com {' '} (255) 717 963 697</div> */}
         <div className='nav-center'>
           <div className='nav-header'>
             <Link to='/'>
@@ -37,19 +36,22 @@ export class Navbar extends Component {
               <Link to='/'>Home</Link>
             </li>
             <li>
-              <Link to='/rooms'>About Us</Link>
+              <Link to='/about_us'>About Us</Link>
             </li>
             <li>
-              <Link to='/rooms'>Services</Link>
+              <Link to='/services'>Services</Link>
             </li>
             <li>
-              <Link to='/rooms'>Contact Us</Link>
+              <Link to='/contact_us'>Contact Us</Link>
             </li>
             <li>
-              <Link to='/rooms'>News</Link>
+              <Link to='/news'>News</Link>
             </li>
             <li>
-              <Link to='/rooms'>Login | Register</Link>
+              <Link to='/login'>Login </Link>
+            </li>
+            <li>
+              <Link to='/register'>Register</Link>
             </li>
           </ul>
         </div>

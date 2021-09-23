@@ -1,55 +1,46 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Title from './Title';
-import { FaCocktail, FaHiking, FaShuttleVan, FaBeer } from 'react-icons/fa';
+import { Image, Row, Col, Card } from 'react-bootstrap'
+import plane1 from '../images/plane4.jpg'
+import plane2 from '../images/plane5.jpg'
+import plane3 from '../images/plane6.jpg'
 
-export class Services extends Component {
-  state = {
-    services: [
-      {
-        icon: <FaCocktail />,
-        title: 'free cocktails',
-        info:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, corporis!'
-      },
-      {
-        icon: <FaHiking />,
-        title: 'endless hiking',
-        info:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, corporis!'
-      },
-      {
-        icon: <FaShuttleVan />,
-        title: 'free shuttle',
-        info:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, corporis!'
-      },
-      {
-        icon: <FaBeer />,
-        title: 'strongest beer',
-        info:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, corporis!'
-      }
-    ]
-  };
+const Services = () => {
+  const servicesArray = [
+    {id: 1, name: 'Service-1', pic: plane1},
+    {id: 2, name: 'Service-2', pic: plane2},
+    {id: 3, name: 'Service-3', pic: plane3},
+    {id: 4, name: 'Service-4', pic: plane2},
+  ]
 
-  render() {
     return (
-      <section className='services'>
-        <Title title='services' />
-        <div className='services-center'>
-          {this.state.services.map((service, index) => {
+      <section className='services-container'>
+        <Title title='Our Services' />
+        <Row>
+          {servicesArray.map(item => {
             return (
-              <article key={index} className='service'>
-                <span>{service.icon}</span>
-                <h6>{service.title}</h6>
-                <p>{service.info}</p>
-              </article>
-            );
+            <Col md={4} key={item.id}>
+              <Card style={{marginBottom: '50px'}}>
+                  <Card.Img src={item.pic} style={{ width: '100%', height: '300px' }}/>
+                  <Card.ImgOverlay>
+                    <Card.Title>{item.name}</Card.Title>
+                  </Card.ImgOverlay>
+                <Card.Body>
+                  <Card.Text>
+                    This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+                  </Card.Text>
+                </Card.Body>
+                {/* <Card.Footer>
+                  <small className="text-muted">Last updated 3 mins ago</small>
+                </Card.Footer> */}
+              </Card>
+            </Col>
+            )
           })}
-        </div>
+        </Row>
       </section>
-    );
-  }
+    )
 }
 
-export default Services;
+export default Services

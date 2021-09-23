@@ -22,7 +22,7 @@
 }
 /* globals */
 body {
-  padding-top: 66px;
+  /* padding-top: 66px; */
   color: var(--mainBlack);
   background: var(--mainWhite);
   font-family: 'Muli', sans-serif;
@@ -91,17 +91,17 @@ h6 {
   letter-spacing: var(--mainSpacing);
 }
 /* end of globals */
+
 /* Navbar */
 .navbar {
   position: fixed;
-  top: 0;
+  top: 30px;
   left: 0;
   width: 100%;
-  /* padding: 0 2rem; */
   padding: 0.75rem 2rem;
   background: var(--lightWhite);
   z-index: 1;
-  border-top: 5px solid var(--primaryColor);
+  /* border-top: 5px solid var(--primaryColor); */
 }
 .nav-header {
   display: flex;
@@ -176,13 +176,13 @@ h6 {
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
-  background: url('./images/plane1.jpg') center/cover no-repeat;
+  background: url('./images/landing_image.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .roomsHero {
-  background-image: url('./images/plane3.jpg');
+  background-image: url('./images/pages_image.jpg');
   min-height: 60vh;
 }
 /* End of Hero */
