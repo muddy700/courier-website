@@ -1,5 +1,5 @@
 .contact__bar {
-    background-color: darkblue;
+    background-color: #27224A;
     top: 0;
     position: fixed;
     width: 100%;
@@ -32,5 +32,71 @@
 }
 
 .footer-container {
-    background-color: red;
+    background-color: #B5B0B0;
+    padding: 5rem 2rem 1rem 2rem;
+    margin-top: 4vh;
+}
+
+.footer-text {
+    text-align: center;
+}
+
+.footer-cards {
+    background-color: inherit;
+}
+
+.footer-links {
+  /* background-color: darkblue; */
+  overflow: hidden;
+  transition: var(--mainTransition);
+  list-style-type: none;
+  position: relative;
+  /* width: 100%; */
+}
+
+.footer-links a {
+  /* display: block; */
+  text-decoration: none;
+  padding: 1rem 0;
+  color: white;
+  /* color: var(--primaryColor); */
+  transition: var(--mainTransition);
+  /* text-align: center; */
+  font-size: 1rem;
+  height: 70px;
+  font-weight: 300;
+}
+
+.footer-links li {
+    color: white;
+}
+
+.section-mini-title {
+  text-align: center;
+  margin-bottom: 1rem;
+
+}
+.section-mini-title h4 {
+  font-size: 2rem;
+  letter-spacing: var(--mainSpacing);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.section-mini-title div {
+  width: 5rem;
+  height: 3px;
+  margin: 0 auto;
+  background: var(--primaryColor);
+}
+
+.social-icons {
+    padding: 1rem;
+}
+
+.footer-list-items {
+    height: 40px;
+}
+
+.footer-link-items {
+    height: 30px;
 }

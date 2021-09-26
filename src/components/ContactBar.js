@@ -7,7 +7,7 @@ const ContactBar = () => {
         // <Row style={{width: '100%'}}>
         // <Col className="d-none d-md-block">
             <div className='contact__bar'>
-                <Col md={{span:3, offset:2}}> 
+                <Col md={{span:5, offset:2}}> 
                         <span> 
                             <span role="img" aria-label="emoji"> ✉ </span>
                             info@courier.com

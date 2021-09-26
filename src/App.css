@@ -94,7 +94,7 @@ h6 {
 
 /* Navbar */
 .navbar {
-  position: fixed;
+  position: relative;
   top: 30px;
   left: 0;
   width: 100%;
@@ -145,6 +145,7 @@ h6 {
   font-size: 1rem;
   font-weight: 700;
 }
+
 .nav-links a:hover {
   color: var(--secondaryColor);
 }
@@ -183,7 +184,7 @@ h6 {
 }
 .roomsHero {
   background-image: url('./images/pages_image.jpg');
-  min-height: 60vh;
+  min-height: 40vh;
 }
 /* End of Hero */
 /* Banner */

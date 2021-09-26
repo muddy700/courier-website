@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
+import Footer from './components/Footer'
 
 // Components
 import Home from './pages/Home';
@@ -33,6 +34,7 @@ function App() {
         <Route path='/rooms/:slug' exact component={SingleRoom} />
         <Route component={Error} />
       </Switch>
+      <Footer />
     </React.Fragment>
   );
 }

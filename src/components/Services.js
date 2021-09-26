@@ -11,6 +11,8 @@ const Services = () => {
     {id: 2, name: 'Service-2', pic: plane2},
     {id: 3, name: 'Service-3', pic: plane3},
     {id: 4, name: 'Service-4', pic: plane2},
+    {id: 5, name: 'Service-5', pic: plane3},
+    {id: 6, name: 'Service-6', pic: plane1},
   ]
 
     return (

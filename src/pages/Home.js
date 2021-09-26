@@ -3,9 +3,8 @@ import Hero from '../components/Hero';
 import Banner from '../components/Banner';
 import { Link } from 'react-router-dom';
 import Services from '../components/Services';
-import FeaturedRooms from '../components/FeaturedRooms';
+// import FeaturedRooms from '../components/FeaturedRooms';
 import Introduction from '../components/Introduction';
-import Footer from '../components/Footer';
 
 function Home() {
   return (
@@ -22,7 +21,6 @@ function Home() {
       </Hero>
       <Introduction />
       <Services />
-      <Footer />
     </React.Fragment>
   );
 }
